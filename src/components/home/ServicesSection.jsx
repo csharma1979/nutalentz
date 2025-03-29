@@ -1,41 +1,49 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
     title: "Staffing and Recruitment",
     description: "Expert talent acquisition and placement services for your organization's needs.",
-    icon: "👥"
+    icon: "👥",
+    path: "/services/staffing"
   },
   {
     title: "Training and Development",
     description: "Comprehensive training programs to enhance your team's skills and capabilities.",
-    icon: "📚"
+    icon: "📚",
+    path: "/services/training"
   },
   {
     title: "Strategy Consulting",
     description: "Professional guidance for business growth and operational excellence.",
-    icon: "💡"
+    icon: "💡",
+    path: "/services/consulting"
   },
   {
     title: "Managed Services",
     description: "End-to-end management of your business processes and quality assurance.",
-    icon: "⚙️"
+    icon: "⚙️",
+    path: "/services/managed-services"
   },
   {
     title: "Data Entry & Processing",
     description: "Accurate data entry, processing, and comprehensive reporting services.",
-    icon: "📊"
+    icon: "📊",
+    path: "/services/data-services"
   },
   {
     title: "Personnel Services",
     description: "Complete HR solutions and personnel management services.",
-    icon: "👤"
+    icon: "👤",
+    path: "/services/personnel"
   },
   {
     title: "Financial Services",
     description: "Comprehensive accounting and financial management solutions.",
-    icon: "💰"
+    icon: "💰",
+    path: "/services/financial"
   }
 ];
 
@@ -55,11 +63,20 @@ const ServicesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 mb-4">{service.description}</p>
+              <Link 
+                to={service.path}
+                className="mt-auto inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+              >
+                Read More
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
             </motion.div>
           ))}
         </div>

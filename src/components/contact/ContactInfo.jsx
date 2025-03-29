@@ -18,7 +18,7 @@ const ContactInfo = () => {
           <div>
             <h3 className="font-semibold text-gray-900">Office Address</h3>
             <address className="not-italic text-gray-600 mt-1">
-              Nitalentz Infocon India Pvt. Ltd<br />
+              Nutalentz Infocon India Pvt. Ltd<br />
               #7, 2nd Floor, JJ Complex<br />
               Aswath nagar, Marathahalli<br />
               Bangalore - 560037<br />
@@ -31,7 +31,8 @@ const ContactInfo = () => {
           <HiPhone className="w-6 h-6 text-brand mt-1" />
           <div>
             <h3 className="font-semibold text-gray-900">Phone</h3>
-            <p className="text-gray-600 mt-1">+91 9880 58132</p>
+            
+            <p className="text-gray-600 mt-1">+91 9880 58132 I 9880 581325</p>
           </div>
         </div>
 
@@ -39,7 +40,7 @@ const ContactInfo = () => {
           <HiMail className="w-6 h-6 text-brand mt-1" />
           <div>
             <h3 className="font-semibold text-gray-900">Email</h3>
-            <p className="text-gray-600 mt-1">srinivas@nutalz.com</p>
+            <p className="text-gray-600 mt-1">srinivas@nutalz.com  I  info@nutalz.com</p>
           </div>
         </div>
       </div>

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-gray-800 text-white mt-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">About Nutalentz</h3>
@@ -38,8 +38,11 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <address className="text-gray-300 not-italic">
               <p>NUTALENTZ INFOCON INDIA PRIVATE LIMITED</p>
-              <p className="mt-2">Email: info@nutalentz.com</p>
-              <p>Phone: +91 XXXXXXXXXX</p>
+              <p>#7, 2nd Floor, JJ Complex</p>
+              <p>Aswath nagar, Marathahalli</p>
+              <p>Bangalore - 560037, India</p>
+              <p className="mt-2">Email: info@nutalz.com</p>
+              <p>Phone: +91 9880 58132 | 9880 581325</p>
             </address>
           </div>
         </div>
@@ -48,6 +51,14 @@ const Footer = () => {
           <p className="text-gray-400">
             © {new Date().getFullYear()} Nutalentz. All rights reserved.
           </p>
+        </div>
+        <div className="mt-8 border-t border-gray-700 pt-4">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>&copy; {new Date().getFullYear()} Nutalentz. All rights reserved.</p>
+            <div className="mt-2 md:mt-0">
+              Technology partner: <a href="https://fritado.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">Fritado</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
